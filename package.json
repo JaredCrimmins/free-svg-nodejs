@@ -1,0 +1,41 @@
+{
+  "name": "free-svg",
+  "version": "0.1.0",
+  "description": "A Free SVG (FreeSVG.org) client library for Node.js.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "prepare": "npm run compile",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "test": "mocha \"./test/tests/**/*.js\" --no-timeouts",
+    "lint": "gts lint",
+    "fix": "gts fix",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/node": "^14.14.45",
+    "chai": "^4.3.4",
+    "dotenv": "^8.6.0",
+    "gts": "^3.1.0",
+    "husky": "^6.0.0",
+    "mocha": "^8.4.0",
+    "typescript": "^4.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaredcrimmins/free-svg-nodejs"
+  },
+  "homepage": "https://github.com/jaredcrimmins/free-svg-nodejs#readme",
+  "author": {
+    "email": "jared@crimmins.io",
+    "name": "Jared Crimmins"
+  },
+  "license": "MIT"
+}
